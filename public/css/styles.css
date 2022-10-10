@@ -1,0 +1,315 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+
+header {
+    background-color: #EAC926;
+}
+
+.descuentos{
+    font-size:16px;
+    color: green;
+    flex-grow: 0.7;
+}
+
+.precios {
+    font-size: 18px;
+    flex-grow: 0.3;
+}
+
+
+.titulares{
+    font-size:24px;
+}
+
+.burger-menu i{
+    background-color:#03264C;
+    color: #ebebeb;
+    margin:10px;
+    border-radius:5px;
+    font-size:20px;
+    width: 40px;
+    border: solid 5px #03264C;
+}
+.burger-menu{
+    text-align: center;
+}
+
+.compra{
+    text-align: center;
+
+}
+
+div.logo{
+    color:#03264C;
+    text-align: center;
+    font-size: 2em;
+   margin-bottom: 10px;
+}
+
+.footer{
+    text-align: center;
+    background-color: #FFF;
+}
+.logo i{
+    color: rgb(0, 19, 128);
+    font-size: 2em;
+    margin-bottom: 10px;
+    }
+
+.principal{
+    width: 90%;
+    margin: auto;
+}
+.principal article{
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+main section article div{
+    border-top:solid 1px #ebebeb;
+    padding: 15px;  
+}
+.logo-envio{
+    position: relative;
+}
+.logo-envio i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+
+.contenedor-precios-descuentos{
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+article{
+    background-color: #FFF;
+    margin-right: 3px;
+}
+.barra-navegacion-principal{
+    width:100%
+}
+
+.barra-navegacion-principal ul{
+list-style: none;
+}
+.barra-navegacion-principal a{
+    text-decoration: none;
+    display: inline-block;
+    padding:5px 0px;
+    font-size: 17px;
+}
+/*sombra de articulos cuando se seleccionan */ 
+article:hover{ box-shadow: 0px 0px 10px rgb(100, 100, 100)
+}
+/* logo de envio rota cuando se selecciona */ 
+.logo-envio i:hover{
+rotate:-90deg;
+transition: 0.7s
+}
+
+
+/*css login y register */
+.boton-enviar{
+    display: block;
+    background-color: #03264C;
+    color: #ebebeb;
+    width: 40%;
+    margin: auto;
+    transition: background-color 450ms
+;
+}
+.main-login{
+    margin:20px;
+    text-align:center
+}
+.form{
+    display: inline-block;
+    width:40%
+}
+.form-register{
+    width: 100%;
+}
+.input{
+    text-align: center;
+}
+
+.contenedor-input{
+    width:40%;
+    margin-bottom: 10px;
+}
+
+/*Animaciones de login */
+.boton-enviar:hover{
+    background-color: #0022AA;
+}
+/*animacion footer*/
+footer i{
+    transition: color 450ms
+;
+}
+footer i:hover{
+ color: #39b54a;
+}
+@media(max-width:360px){
+    
+    .barra-navegacion-principal{
+        display: none;
+    }
+    .descripciones{
+         display: none;
+    }
+    .contenedor-logo-barra{
+        display: flex;
+        flex-wrap:wrap; 
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo-principal{
+        width:50%;
+       text-align: left;
+       max-width: 200px;
+    }
+    .barra-busqueda{
+      width: 50%;
+      text-align: right;
+      align-items:center;
+    }
+.banner{
+    display: none;
+}
+}
+
+@media (min-width:361px){
+  /*VERSION TABLET */ 
+  /*Banner*/  
+  .banner{
+      
+        width:100%
+    }
+    .banner img{
+        width:100%;
+    }
+  /*header acomodado */ 
+    .logo-principal{
+    display:inline-block;
+    width: 30%;
+  }
+  .barra-busqueda{
+    display:inline-block;
+    width:30%;
+    text-align: center;
+    height: 35px;
+    
+  }
+  .compra{
+    display:inline-block;
+    width:30%;
+    max-width: 350px;
+    text-align: right;
+  }
+  .contenedor-logo-barra{
+    margin-bottom: 50px;
+  }
+  
+   
+    /* burguer menu desaparece en tablet*/ 
+    .burger-menu {
+    display:none;
+    }
+    
+    /*Descripcion para tablet, desaparece y luego con hover hago que aparezca */ 
+    .descripciones{
+        font-size: 16px;
+        display: none;
+   }
+  article:hover .descripciones{
+    display:block;
+  }
+  
+  /* acomodo la barra de navegacion de manera horizontal */ 
+  .barra-navegacion-principal{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .barra-navegacion-principal ul{
+display: flex;
+  }
+  .barra-navegacion-principal li{
+    margin:0px 5px
+  }
+  /*ubicando dos articulos para version Tablet */
+ .contenedor-de-articulos1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+.contenedor-de-articulos2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.articulo{
+    width: 40%;
+}
+}
+
+
+
+   @media(min-width:768px){
+/* VERSION DESKTOP*/
+
+/* poniendole un max width a contenedores del header y ajustandolo*/
+    .barra-navegacion-principal, .contenedor-logo-barra{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .barra-navegacion-principal{
+        margin-top: 50px;
+    }
+    .barra-navegacion-principal li{
+        margin: 0px 10px;
+    }
+    .barra-navegacion-principal a{
+        font-size: 20 px;
+    }
+    .contenedor-logo-barra{
+        align-items: center;
+    }
+    /* Ubicando 4 articulos para Desktop*/
+    .contenedor-de-articulos1{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+      }
+      .contenedor-de-articulos2{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+      }
+     /* Footer del desktop*/
+     .footer{
+       display: flex;
+    }
+   }
